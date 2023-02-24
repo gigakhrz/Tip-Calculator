@@ -29,6 +29,12 @@ main{
     background-color: white;
     border-radius: 25px 25px 0 0 ;
     padding: 32px;
+    gap: 32px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
 }
 
 .label-bill{
@@ -49,6 +55,11 @@ main{
     background-position: 19px 17px;
 }
 
+.input-num:hover{
+    border: 2px solid #26C2AE;
+    cursor: pointer;
+}
+
 .percent-p{
     font-size: 16px;
     font-weight: 700;
@@ -64,7 +75,7 @@ main{
     gap: 16.5px;
 }
 
-.custom{
+#custom{
     background-color: var(--input);
     color: var(--paragraph);
     width: 147px;
@@ -73,6 +84,11 @@ main{
     border-radius: 5px;
     font-size: 24px;
     line-height: 34.5px;
+}
+
+#custom{
+    border: 2px solid #26C2AE;
+    cursor: pointer;
 }
 
 .how-many{
@@ -84,6 +100,14 @@ main{
     color: white;
     font-size: 24px;
     line-height: 34.5px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+.how-many:hover{
+    background-color: #9FE8DF;
+    color: var(--darkgreen);
+    cursor: pointer;
 }
 
 .label-quantity{
@@ -113,12 +137,11 @@ main{
     background-color: var(--darkgreen);
     border-radius: 15px;
     padding: 39px 22px 24px 24px;
-    margin-top: 32px;
 }
 
 .amount{
     display: flex;
-    gap:87px ;
+    justify-content: space-between;
 }
 
 .amount-container{
@@ -150,7 +173,7 @@ main{
 
 .total-amount{
     display: flex;
-    gap:87px ;
+    justify-content: space-between;
 }
 
 .total-amount-container{
@@ -186,11 +209,100 @@ main{
     align-items: center;
     justify-content: center;
     background-color: var(--green);
+    margin-top: 8px;
     height: 48px;
     border-radius: 5px;
     font-size: 20px;
     line-height: 29.6px;
     font-weight: 700;
     color: var(--darkgreen);
+}
+
+.reset:hover{
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+@media screen and (min-width:1024px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main{
+        flex-direction: row;
+        border-radius: 25px;
+        gap: 48px;
+    }
+
+    section{
+        width: 385px;
+        margin-top: 13px;
+    }
+
+    .input-num{
+        width: 100%;
+    }
+
+    .percent{
+        gap: 14px;
+    }
+
+    .percent-p{
+        margin-top: 40px;
+    }
+
+    .how-many{
+        width: 117px;
+    }
+
+    #custom{
+        min-width: 117px;
+        max-width: 117px;
+        max-height: 47px;
+    }
+
+    .label-quantity{
+        margin-bottom: 40px;
+    }
+
+    .input-quantity-num{
+        width: 100%;
+    }
+
+    .total{
+        min-width: 367px;
+        max-width: 367px;
+        gap: 53px;
+    }
+
+    .amount{
+        align-items: center;
+    }
+
+    .total-amount{
+        align-items: center;
+    }
+
+    .amount-number{
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -1px;
+    }
+
+    .total-amount-number{
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -1px;
+    }
+
+    .reset{
+        background-color: #0D686D;
+        margin-top: 69px;
+    }
+    
 }
 
