@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  
+
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+
+  <header> <img class="logo" src="./images/logo.svg" alt="logo-img"></header>
+
+  <main>
+
+    <label class="label-bill" for="Bill"><h1>Bill</h1>
+    <input type="number" class="input-num"  id="input-bill" name="bill">
+    </label>
+
+    <p class="percent-p">Select Tip %</p>
+
+    <div class="percent">
+
+      <button class="how-many">5%</button>
+      <button class="how-many">10%</button>
+      <button class="how-many">15%</button>
+      <button class="how-many">20%</button>
+      <button class="how-many">25%</button>
+      <button class="custom">Custom</button>
+
+    </div>
+
+    <label class="label-quantity" for="quantity"><h1>Number of people</h1>
+      <input type="number" class="input-quantity-num"  id="input-quantity" name="quantity">
+    </label>
+
+    <div class="total">
+
+      <div class="amount">
+
+        <div class="amount-container">
+          <h4>Tip Amount</h4>
+          <p>/ person</p>
+        </div>
+
+        <div>
+          <h2 class="amount-number">$0.00</h2>
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="total-amount">
+
+          <div class="total-amount-container">
+            <h4>Tip Amount</h4>
+            <p>/ person</p>
+          </div>
+      
+          <div>
+            <h2 class="total-amount-number">$0.00</h2>
+          </div>
+      
+        </div>
+    
+      </div>
+
+      <button class="reset">reset</button>
+
+    </div>
+
+  </main>
+  
+</body>
+</html>
