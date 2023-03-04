@@ -21,7 +21,7 @@
 
     <section>
 
-      <label class="label-bill" for="Bill"><h1>Bill</h1>
+      <label class="label-bill" for="iput-bill"><h1>Bill</h1>
       <input type="number" class="input-num"  id="input-bill" name="bill" placeholder="0.00">
       </label>
 
@@ -29,18 +29,18 @@
 
       <div class="percent">
 
-        <button class="how-many">5%</button>
-        <button class="how-many">10%</button>
-        <button class="how-many">15%</button>
-        <button class="how-many">20%</button>
-        <button class="how-many">25%</button>
+        <button class="how-many" onclick="moneyPerPeople(this)" value="5">5%</button>
+        <button class="how-many" onclick="moneyPerPeople(this)" value="10">10%</button>
+        <button class="how-many" onclick="moneyPerPeople(this)" value="15">15%</button>
+        <button class="how-many" onclick="moneyPerPeople(this)" value="25">25%</button>
+        <button class="how-many" onclick="moneyPerPeople(this)" value="50">50%</button>
         <input type="number" id="custom"  placeholder="Custom">
         <!-- <button class="custom">Custom</button> 
         -->
 
       </div>
 
-      <label class="label-quantity" for="quantity"><h1>Number of people</h1>
+      <label class="label-quantity" for="input-quantity"><h1 class="error-container">Number of people <span id="error-message">Can't be Zero</span></h1>
         <input type="number" class="input-quantity-num"  id="input-quantity" name="quantity" placeholder="0">
       </label>
 
@@ -56,7 +56,7 @@
         </div>
 
         <div>
-          <h2 class="amount-number">$0.00</h2>
+          <h2 id="amount-number">$0.00</h2>
         </div>
 
       </div>
@@ -83,6 +83,7 @@
     </div>
 
   </main>
-  
+
+  <script src="./script.js"></script>
 </body>
 </html>
